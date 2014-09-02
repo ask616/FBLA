@@ -1,0 +1,271 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+.intro{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 3;
+	position: relative;
+}
+
+.intro-overlay{
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/bg1.jpg");
+	background-size: cover;
+	position: absolute;
+}
+
+.vertAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+
+.vertAlign-item {
+  max-width: 50%;
+}
+
+.title{
+	z-index: 2;
+}
+
+.title-main{
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	font-weight: 700;
+	color:#F2F1EF;
+	font-size: 54px;
+}
+
+.title-subtitle{
+	color:white;
+	margin-top: 30px;
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	font-size: 24px;
+}
+
+#two{
+	overflow: hidden;
+}
+
+.udhr-quote{
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 36px;
+	overflow: hidden;
+	margin-top: 30px;
+	color: #0d345f;
+}
+
+.udhr-quote small{
+	font-size: 24px;
+}
+
+.about-text{
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.br {
+	 position: relative; 
+	 border: 0 solid #dae0d6;
+	  border-top-width: 1px; 
+	  height: 0; 
+	  margin: 30px auto; 
+	  clear: both; 
+	  display: block; 
+	  width: 590px; 
+}
+
+.br:after, .br:before  {
+     content:  "";
+     display:  block;
+     position:  absolute;
+     left:  50%;
+     overflow:  hidden;
+     -webkit-transform:  rotate(45deg);
+     -moz-transform:  rotate(45deg);
+     -ms-transform:  rotate(45deg);
+     -o-transform:  rotate(45deg);
+     transform:  rotate(45deg);
+ }
+
+.br:after  {
+     height:  10px;
+     width:  10px;
+     margin-top:  -6px;
+     margin-left:  -6px;
+     background:  #0d345f;
+ }
+
+#white:after{
+	background:  lightgrey;
+}
+
+.br:before  {
+     height:  17px;
+     width:  17px;
+     margin-top:  -9px;
+     margin-left:  -9px;
+     background:  #fdfdfd;
+ }
+
+.goals-header{
+	width: 100%;
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 48px;
+	color: #0d345f;
+	background-color: #f3f5f8;
+	padding: 15px 0;
+}
+
+.goal{
+	width: 100%;
+	height: 33%;
+	background-size: cover;
+	color: white;
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 48px;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+.goal-text{
+	z-index: 100;
+	position: relative;
+}
+
+.goal-overlay{
+	background-color: #0d345f;
+	opacity: 0.6;
+	width: 100%;
+	height: 33%;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.goal1{
+	background-image: url("../images/syringes.jpg");
+	background-position: 0 -800px;
+}
+
+.goal2{
+	background-image: url("../images/globe.jpg");
+	background-position: 0 -300px;
+}
+
+.goal3{
+	background-image: url("../images/bottles.jpg");
+	background-position: 0 -600px;
+}
+
+.work{
+	overflow: hidden;
+}
+
+.work-item{
+	height: 50vh;
+	background-color: #0d345f;
+}
+
+.work-item:hover{}
+
+.work-item-main-text{
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 24px;
+	position: relative;
+	margin-top: 50px;
+	color: white;
+	margin-left: 30px;
+	z-index: 2;
+}
+
+.work-item-subtext{
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 16px;
+	position: relative;
+	margin-top: 20px;
+	width: 80%;
+	margin-left: 30px;
+	color: white;
+	z-index: 2;
+}
+
+.work-item-pic{
+	height: 50vh;
+}
+
+.pic-1{
+	background-image: url("../images/vaccination.jpg");
+}
+
+.pic-2{
+	background-image: url("../images/natalcare.jpg");
+	background-position: -70px -50px;
+}
+
+.pic-3{
+	background-image: url("../images/portableh20.jpg");
+	background-position: -70px -50px;
+}
+
+.work-item-overlay{
+	height: 100%;
+	width: 100%;
+	background-color:#0d345f;
+	opacity: 0.6;
+	left: 0;
+	z-index: 1;
+	position: absolute;
+}
+
+.work-hover{
+	height: 100%;
+	width: 100%;
+	background-color:white;
+	opacity: 0;
+	color: black;
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 24px;
+	cursor: pointer;
+	left: 0;
+	z-index: 10;
+	position: absolute;
+
+	-webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    -ms-transition: opacity .25s ease-in-out;    
+    transition: opacity .25s ease-in-out;
+}
+
+.work-hover:hover{
+	opacity: 1;
+}
+
+.read-more{
+	padding: 15px 0;
+	border-top: 1px solid grey;
+	border-bottom:1px solid grey;
+}
