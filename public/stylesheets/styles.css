@@ -13,7 +13,7 @@ html{
 .intro{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.6);
+	background-color: #3875B9;
 	z-index: 3;
 	position: relative;
 }
@@ -21,8 +21,8 @@ html{
 .intro-overlay{
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/bg1.jpg");
-	background-size: cover;
+	/*background-image: url("../images/bg1.jpg");
+	background-size: cover;*/
 	position: absolute;
 }
 
@@ -48,7 +48,7 @@ html{
 	font-family: "Open Sans";
 	font-weight: 700;
 	color:#F2F1EF;
-	font-size: 54px;
+	font-size: 48px;
 }
 
 .title-subtitle{
@@ -159,6 +159,7 @@ html{
 	background-color: #0d345f;
 	opacity: 0.6;
 	width: 100%;
+	margin-top: 0;
 	height: 33%;
 	left: 0;
 	position: absolute;
@@ -248,9 +249,9 @@ background-size: cover;
 .work-hover{
 	height: 100%;
 	width: 100%;
-	background-color:white;
+	background-color:rgb(125,195,231);
 	opacity: 0;
-	color: black;
+	color: white;
 	font-family: "Open Sans";
 	font-weight: 300;
 	font-size: 24px;
@@ -272,8 +273,8 @@ background-size: cover;
 
 .read-more{
 	padding: 15px 0;
-	border-top: 1px solid grey;
-	border-bottom:1px solid grey;
+	border-top: 1px solid lightgrey;
+	border-bottom:1px solid lightgrey;
 }
 
 .subscribe	{
@@ -342,7 +343,7 @@ background-size: cover;
 }
 
 .form-group{
-	top: 45px;
+	top: 25px;
 	position: relative;
 }
 
@@ -353,4 +354,9 @@ background-size: cover;
 .email-field{
 	border-radius: 1px;
 	margin-top: 10px;
+}
+
+.work-item-pic a{
+	text-decoration: none;
+	color: black;
 }

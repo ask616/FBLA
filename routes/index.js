@@ -4,5 +4,9 @@ module.exports = function(app) {
 		res.render('index.ejs'); // load the index.ejs file
 	});
 
+	app.get('/inner', function(req, res) {
+		res.render('inner.ejs'); // load the index.ejs file
+	});
+
 
 }
