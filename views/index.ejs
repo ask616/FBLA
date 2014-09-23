@@ -7,9 +7,10 @@
 <title>20thirty.org</title>
 <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
 <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="stylesheets/flexslider.css" rel="stylesheet" >
 <link href="stylesheets/styles.css" rel="stylesheet">
 <link href="stylesheets/queries.css" rel="stylesheet">
@@ -57,63 +58,123 @@
         </div>
     </div>
 
-    <div class="intro-overlay" data-start="background-position: 0 0px;"
-    data-top-bottom="background-position: 0 200px;"
-    data-anchor-target=".intro-overlay"></div>
+    <div class="intro-overlay"></div>
 
     <div class="intro">
-      <div class="vertAlign title">
-        <div class="vertAlign-item">
-          <div class="title-main">We’re Committed to Strengthening People and Local Economies</div>
-           <hr class="br" id="white">
-          <div class="title-subtitle">Basic healthcare is a universal right and crucial to engaged economies. 20thirty and our dedicated partners work hard to deliver fundamental services to the right people.</div>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/bg1.jpg" alt="...">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/bottles.jpg" alt="...">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+             <div class="item">
+              <img src="images/natalcare.jpg" alt="...">
+              <div class="carousel-caption">
+                
+              </div>
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#carousel-example-generic" onclick="$('#carousel-example-generic').carousel('prev')">
+            <span class="fa fa-2x fa-arrow-circle-o-left" style="margin-top:45%"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" onclick="$('#carousel-example-generic').carousel('next')">
+            <span class="fa fa-2x fa-arrow-circle-o-right"></span>
+          </a>
         </div>
-      </div>
     </div>
 
-    <div id="two">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-           <div class="udhr-quote text-center">
-              “We need to begin thinking of inequality not just as a moral issue-which it is-but also as a fundamental economic concern, integral to thinking about human development.”<br><small>- Joseph Stiglitz, Nobel Laureate in Economics</small>
-           </div>
-          <!--  <hr class="br"> -->
+    <div class="about text-center">
+        <div class="about-header">
+            <p style="position:relative;top:5px;">introduction</p>
         </div>
-      </div>    
-
-<!--       <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center about-text">
-            More than 2.2 Billion people are living in multidimensional poverty. That will increase to 4.2 Billion by 2050. 20thirty.org addresses these issues by creating partnerships of purpose and addressing systemic and structural vulnerabilities. We work to help reduce vulnerability and transnational economic threats at key points through health and access to drinkable H2O. 
-
-            <br><br>
-
-            Our experiences in the for-profit sector mean that we take a “for-profit” approach in managing costs and overhead. Efficiencies and accountability are top priorities so we can effectively impact more communities. 
+        <div class="about-headbar"></div>
+        <div class="about-title text-center">About Sanatech.org</div>
+        <div class="about-text">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    Sanatech.org is dedicated to strengthening people and local economies. Our goal is to provide innovative applications of technology to solve the pressing problems in the developing world .
+                    <br><br>
+                    By addressing key points in healthcare and building human capacity, we work to help reduce vulnerability and transnational economic. 
+                    <br><br>
+                    SurePod development history….
+                    <br><br>
+                    Sanatech.org addresses these health issues by creating partnerships of purpose and building technology with implementation parterns. 
+                    <br><br>
+                    <span style="font-family:Source Sans Pro;font-weight:700;font-size:24px;letter-spacing:1px">The Bottom Line: Simple technology can save lives. </span>
+                </div>
+            </div>
         </div>
-      </div> -->
     </div>
 
-    <div class="goals-header text-center">By 2030, We Will:</div>
-    <div class="goal-overlay"></div>
-    <div class="goal goal1 vertAlign" data-start="background-position: 0 -1000px;"
-      data-top-bottom="background-position: 0 -800px;"
-      data-anchor-target=".goal1">
-        
-        <div class="goal-text vertAlign-item">Vaccinate <span id="vaccinations">1,500,000</span> people</div>
+    <div class="board">
+        <div class="board text-center">
+        <div class="board-header">
+            <p style="position:relative;top:5px;">who we are</p>
+        </div>
+        <div class="board-headbar"></div>
+        <div class="board-intro">
+            <section class="intro text-center section-padding" id="intro">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 wp1 padding">
+                    <p class="varela">We have a multi-disciplinary team and Board of Advisors. We cover technology, health and medicine, development and business. Our board has a breathtaking range of experiences and perspectives provides the richest possible landscape for effective and creative solutions.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+          <section class="features text-center section-padding" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="features-wrapper">
+                  <div class="col-md-4 wp2">
+                    <div class="icon">
+                      <i class="fa fa-binoculars shadow"></i>
+                    </div>
+                    <h2>Vision</h2>
+                    <p>Many health problems around the world stem from lack of information, access to technology and proper management of diseases. Sana provides tools and access to innovative technology that make a direct impact on peoples’ well-being. Technology can stop diseases, keep people healthy, reach their full potential. Strong people and robust economies.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-bar-chart-o shadow"></i>
+                    </div>
+                    <h2>Mission</h2>
+                    <p>Sana brings together innovative technology, field experts, partners to solve major issues utilizing innovative and simple technology. We work hard to strengthen people by improving their health and creating sustainable solutions for more resilient economies.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-users shadow"></i>
+                    </div>
+                    <h2>Values</h2>
+                    <p>These values guide our decisions and how we will interact with those that we serve: Commitment to Success, Accountability, Teamwork, Risk-taking, Efficiency, Empowerment, Integrity, and Honesty.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </div>
-<div class="goal-overlay"></div>
-    <div class="goal goal2 vertAlign" data-start="background-position: 0 -500px;"
-      data-top-bottom="background-position: 0 -300px;"
-      data-anchor-target=".goal2">
-        
-        <div class="goal-text vertAlign-item">Cover <span id="surepods">2,000,000</span> people with SurePods</div>
-    </div>
-<div class="goal-overlay"></div>
-    <div class="goal goal3 vertAlign" data-start="background-position: 0 -800px;"
-      data-top-bottom="background-position: 0 -600px;"
-      data-anchor-target=".goal3">
-        
-        <div class="goal-text vertAlign-item">Give <span id="water">1,000,000</span> people access to drinkable water</div>
-    </div>
+<!-- 
 
     <div class="work">
         <div class="row">
@@ -168,10 +229,10 @@
                 <div class="work-item-subtext">lorem ipsum on patients. Our simple SMS, and text to voice platform can be used by community health workers wi on patients. Our simple SMS, and text to voice platform can be used by community health workers wi</div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="subscribe-overlay"></div>
+<!--     <div class="subscribe-overlay"></div>
     <div class="subscribe" data-start="background-position: 0 -600px;"
       data-top-bottom="background-position: 0 -300px;"
       data-anchor-target=".subscribe">
@@ -185,19 +246,19 @@
             <div class="col-md-3 col-md-offset-1 email-input">
                 
                  <div class="form-group">
-                    <span class="email-subtitle">Enter your email to receive updates:</span>
+                    <span class="email-subtitle">Enter your email to receive updates:</span> -->
                    <!--  <form class="form-inline" role="form">
                         <input type="email" class="form-control email-field" id="exampleInputEmail1" placeholder="Enter email">
                         <i class="fa fa-2x fa-arrow-circle-o-right" style="position:relative;top:12px;"></i>
                     </form> -->
-                     <input type="email" class="form-control email-field" id="exampleInputEmail1" placeholder="Enter email">
+<!--                      <input type="email" class="form-control email-field" id="exampleInputEmail1" placeholder="Enter email">
                      <button type="button" class="btn btn-info" style="width:100%;border-radius:1px;margin-top:6px;border-bottom:4px solid #17418D">Submit</button>
                   </div>
             </div>
             
         </div>
       </div>
-    </div>
+    </div> -->
 
 <!--     <div class = "navbar navbar-default navbar-fixed-bottom">
 
@@ -214,7 +275,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="javascripts/waypoints.min.js"></script>
 <script src="javascripts/bootstrap.min.js"></script>
-<script src="javascripts/scripts.js"></script>
+<!-- <script src="javascripts/scripts.js"></script> -->
 <script src="javascripts/jquery.flexslider.js"></script>
 <script src="javascripts/modernizr.js"></script>
 <script src="javascripts/skrollr-master/dist/skrollr.min.js"></script>

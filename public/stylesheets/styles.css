@@ -8,14 +8,21 @@ html{
 	height: 100%;
 }
 
-
+.item img{
+	width: 100%;
+}
 
 .intro{
 	width: 100%;
 	height: 100%;
-	background-color: #3875B9;
+	/*background-color: #3875B9;*/
 	z-index: 3;
 	position: relative;
+	overflow: hidden;
+}
+
+#carousel-example-generic{
+	height: 100%;
 }
 
 .intro-overlay{
@@ -51,6 +58,8 @@ html{
 	font-size: 48px;
 }
 
+
+
 .title-subtitle{
 	color:white;
 	margin-top: 30px;
@@ -58,6 +67,129 @@ html{
 	font-weight: 300;
 	font-size: 24px;
 }
+
+
+
+
+.about{
+	width: 100%;
+	padding-bottom: 50px;
+	/*margin-top: 0px;*/
+	z-index: 4;
+	position: relative;
+	background-color: #3A539B;
+}
+
+.about-header{
+	/*float: left;*/
+	background:rgb(10,42,76);
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 300px; /* set it to anything */
+    text-align: center;
+	position: relative;
+	top: -30px;
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	padding: 20px 0;
+	z-index: 3;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.about-headbar{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 45px;
+	background-color: rgb(10,42,76);
+}
+
+.about-header p{
+	display: inline-block;
+}
+
+.about-title{
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	color: white;
+	font-size: 48px;
+	text-transform: uppercase;
+	padding: 8px 20px;
+	display: inline-block;
+	border-radius: 0.35em;
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+}
+
+.about-text{
+	color: white;
+	margin: 30px;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 15px;
+}
+
+
+
+.varela{
+	font-family: "Varela Round";
+}
+
+.padding{
+	padding: 40px 20px;
+}
+
+.board{
+	width: 100%;
+	/*margin-top: 0px;*/
+	z-index: 6;
+	position: relative;
+	background-color: #f3f5f8;
+	padding-bottom: 40px;
+}
+
+.board-intro{
+	background-color: #EEEEEE;
+	width: 100%;
+	position: relative;
+	margin-top: -28px;
+}
+
+.board-header{
+	/*float: left;*/
+	background:white;
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 300px; /* set it to anything */
+    text-align: center;
+	position: relative;
+	top: -30px;
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	padding: 20px 0;
+	z-index: 3;
+	color: black;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.board-headbar{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 45px;
+	background-color: white;
+}
+
+.features{
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 15px;
+}
+
 
 #two{
 	overflow: hidden;
@@ -77,12 +209,6 @@ html{
 	font-size: 20px;
 }
 
-.about-text{
-	font-family: "Open Sans";
-	font-weight: 300;
-	font-size: 18px;
-	margin-bottom: 30px;
-}
 
 .br {
 	 position: relative; 
@@ -359,4 +485,74 @@ background-size: cover;
 .work-item-pic a{
 	text-decoration: none;
 	color: black;
+}
+
+
+
+
+
+
+.features-wrapper, .team-wrapper {
+    margin: 70px 0 0;
+}
+.shadow {
+text-shadow: rgb(59, 118, 194) 1px 1px,
+    rgb(59, 118, 194) 2px 2px,
+    rgb(59, 118, 194) 3px 3px,
+    rgb(59, 118, 194) 4px 4px,
+    rgb(59, 118, 194) 5px 5px,
+    rgb(59, 118, 194) 6px 6px,
+    rgb(59, 118, 194) 7px 7px,
+    rgb(59, 118, 194) 8px 8px,
+    rgb(59, 118, 194) 9px 9px,
+    rgb(59, 118, 194) 10px 10px,
+    rgb(59, 118, 194) 11px 11px,
+    rgb(59, 118, 194) 12px 12px,
+    rgb(59, 118, 195) 13px 13px,
+    rgb(59, 119, 196) 14px 14px,
+    rgb(60, 120, 197) 15px 15px,
+    rgb(60, 120, 198) 16px 16px,
+    rgb(60, 121, 199) 17px 17px,
+    rgb(61, 122, 201) 18px 18px,
+    rgb(61, 123, 202) 19px 19px,
+    rgb(61, 123, 203) 20px 20px,
+    rgb(62, 124, 204) 21px 21px,
+    rgb(62, 125, 205) 22px 22px,
+    rgb(62, 125, 206) 23px 23px,
+    rgb(63, 126, 208) 24px 24px,
+    rgb(63, 127, 209) 25px 25px,
+    rgb(63, 128, 210) 26px 26px,
+    rgb(64, 128, 211) 27px 27px,
+    rgb(64, 129, 212) 28px 28px,
+    rgb(64, 130, 213) 29px 29px,
+    rgb(65, 131, 215) 30px 30px;
+
+}
+.icon {
+    height: 175px;
+    width: 175px;
+    line-height: 175px;
+    max-width: 100%;
+    background: #4183D7;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 50px;
+}
+.iphone {
+    width: 50%;
+    background: #f3f5f8;
+    float: left;
+    height: 100%;
+    box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, .1);
+    z-index: 1;
 }
