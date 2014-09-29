@@ -147,7 +147,7 @@ html{
 	z-index: 6;
 	position: relative;
 	background-color: #f3f5f8;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 .board-intro{
@@ -555,4 +555,75 @@ text-shadow: rgb(59, 118, 194) 1px 1px,
     -moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, .1);
     -webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, .1);
     z-index: 1;
+}
+
+.ourWork{
+	width: 100%;
+	position: relative;
+	z-index: 1000;
+	height: 100%;
+	background-image: url("../images/globe.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.workButtons{
+	margin-top: 30px;
+}
+
+.workButtons button{
+	background-color: rgba(0,0,0,0);
+	border:1px solid white;
+	color: white;
+	font-size: 24px;
+	font-family: "Open Sans";
+	font-weight: 300;
+}
+
+.workButtons button:hover{
+	color: blue;
+	background-color: white;
+}
+
+.workText{
+	background-color: #f3f5f8;
+	padding:20px;
+	margin-top: 30px;
+	border-radius: 3px;
+}
+
+
+.work-header{
+	/*float: left;*/
+	background:#4B77BE;
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 300px; /* set it to anything */
+    text-align: center;
+	position: relative;
+	top: -30px;
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	padding: 20px 0;
+	z-index: 3;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.work-headbar{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 45px;
+	background-color: #4B77BE;
+}
+
+.problem{
+
+}
+
+.solution{
+	display: none;
 }
