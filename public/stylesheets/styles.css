@@ -584,6 +584,10 @@ text-shadow: rgb(59, 118, 194) 1px 1px,
 	color: blue;
 	background-color: white;
 }
+/*
+.workButtons button:focus{
+	color:white;
+}*/
 
 .workText{
 	background-color: #f3f5f8;

@@ -1,5 +1,35 @@
 // /***************** Waypoints ******************/
 
+
+
+$(document).ready(function(){
+
+	// $(".problem-btn").click(function(){
+	// 	alert("yo");
+	// });
+ 	$(".problem-btn").focus();
+ 	$(".solution-btn").click(function(){
+ 		$(".problem").hide();
+ 		$(".solution").show();
+ 		$(".core-technology").hide();
+ 	});
+ 	$(".problem-btn").click(function(){
+ 		$(".solution").hide();
+ 		$(".problem").show();
+ 		$(".core-technology").hide();
+ 	});
+ 	$(".tech-btn").click(function(){
+ 		$(".solution").hide();
+ 		$(".problem").hide();
+ 		$(".core-technology").show();
+ 	});
+});
+
+
+
+
+
+
 // $(document).ready(function() {
 
 // 	var s = skrollr.init({
