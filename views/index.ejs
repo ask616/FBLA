@@ -23,7 +23,7 @@
 
 
 <body>
-    <div class = "navbar navbar-fixed-top" style="background-color:rgb(10,42,76);">
+    <div class = "navbar navbar-static-top" style="background-color:rgb(10,42,76);z-index:10000000000000000">
         <div class = "container">
 
             <a href = "#" class="navbar-brand"style="color:white;font-family: Open Sans;font-weight:300;font-size:18px">Sanatech</a>
@@ -61,9 +61,14 @@
     <div class="intro-overlay"></div>
 
     <div class="intro">
+      <div class="intro-main-overlay text-center">
+        <div class="intro-text">
+         <span style="font-weight:400">Sanatech.org</span>: Your Team in Care
+        </div>
+      </div>
       <div id="carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators" style="z-index:2000">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
@@ -91,11 +96,11 @@
             </div>
           </div>
 
-          <a class="left carousel-control" href="#carousel" onclick="$('#carousel').carousel('prev')">
-            <span class="fa fa-2x fa-arrow-circle-o-left" style="position:relative;margin-top:150%"></span>
+          <a class="left carousel-control" style="z-index:3000" href="#carousel" onclick="$('#carousel').carousel('prev')">
+            <span class="fa fa-4x fa-angle-left" style="position:relative;margin-top:110%;"></span>
           </a>
-          <a class="right carousel-control" href="#carousel" onclick="$('#carousel').carousel('next')">
-            <span class="fa fa-2x fa-arrow-circle-o-right" style="position:relative;margin-top:150%"></span>
+          <a class="right carousel-control" style="z-index:3000" href="#carousel" onclick="$('#carousel').carousel('next')">
+            <span class="fa fa-4x fa-angle-right" style="position:relative;margin-top:110%;"></span>
           </a>
         </div>
     </div>
@@ -228,9 +233,52 @@
 
     </div>
 
-    <div class="partners">
+    <div class="partners text-center">
+      <div class="partner-header">
+          <p style="position:relative;top:5px;">our partners</p>
+      </div>
+      <div class="partner-headbar"></div>
+      <div class="board-intro" style="margin-top:-30px;background-color:#22313f;color:white">
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1 padding">
+                <p class="varela">Sanatech.org and our dedicated partners work hard to deliver crucial services to the right people. We are proud to partner with MIT and it is through working with our partners that we create sustainable results and economic impact. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="partner-logo-grid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="http://www.samsung.com/us/" target="_blank"><img class="partner-img" src="images/samsung.png" /></a>
+            </div>
+            <div class="col-md-6">
+              <a href="http://www.t-mobile.com/" target="_blank"><img class="partner-img" src="images/tmobile.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="http://www.plintron.com/" target="_blank"><img class="partner-img" src="images/plinitron.png" /></a>
+          </div>
+          <div class="col-md-6">
+           <a href="http://www.walgreens.com/" target="_blank"> <img class="partner-img" src="images/walgreens.png" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <a href="http://web.mit.edu/" target="_blank"><img class="mit partner-img" src="images/mit.png" /></a>
+          </div>
+        </div>
+      </div>
     </div>
-
 <!-- 
 
     <div class="work">

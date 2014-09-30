@@ -18,7 +18,7 @@ html{
 	/*background-color: #3875B9;*/
 	z-index: 3;
 	position: relative;
-	overflow: hidden;
+
 }
 
 #carousel{
@@ -561,7 +561,7 @@ text-shadow: rgb(59, 118, 194) 1px 1px,
 	width: 100%;
 	position: relative;
 	z-index: 1000;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 	background-image: url("../images/globe.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -634,6 +634,92 @@ text-shadow: rgb(59, 118, 194) 1px 1px,
 
 .partners{
 	width: 100%;
-	height: 100%;
 	position: relative;
+	background-color: #EEEEEE;
+}
+
+.partner-header{
+	/*float: left;*/
+	background:#fff;
+    margin: 0 auto; /* to make the div center align to the browser */
+    width: 300px; /* set it to anything */
+    text-align: center;
+	position: relative;
+	top: -30px;
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	padding: 20px 0;
+	z-index: 300000000;
+	color: #22313f;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.partner-headbar{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 45px;
+	background-color: #fff;
+}
+
+.partner-logo-grid{
+	padding:50px;
+	overflow: hidden;
+}
+
+.mit{
+	margin-top: 50px;
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.partner-img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+}
+
+.partner-img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.navbar-brand{
+    line-height: 120px;
+    height: 120px;
+    padding-top: 0;
+}
+
+.navbar-nav>li{
+	margin-top: 35px;
+}
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.intro-main-overlay{
+	position: absolute;
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1000;
+}
+
+.intro-text{
+	font-size: 42px;
+	margin-top: 20px;
+	z-index: 30000;
+	position: relative;
+	color: white;
+	font-family: "Open Sans";
+	font-weight: 300;
 }
