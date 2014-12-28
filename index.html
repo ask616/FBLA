@@ -1,10 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Cycle Fitness</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="frameworks/dist/semantic.min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-Cycle Fitness
+<!-- 	<div class="page-title">
+		Cycle Fitness
+	</div> -->
+
+	<div class="intro" style="text-align:center">
+		<img src="images/bicycle-icon.svg" style="margin-top:100px" height="200" />
+	</div>
+
+	<div class="content-wrapper">
+		<div class="about-text">
+			<div class="pure-g">
+				<div class="about-sidebar-image pure-u-2-5"></div>
+				<div class="about-right-sidebar pure-u-3-5">
+					<div class="pure-g">
+						<div class="pure-u-1-3 stat">
+							<div class="stat-header">
+								STATISTIC
+							</div>
+							<div class="stat-body">
+								1
+							</div>
+						</div>
+						<div class="pure-u-1-3 stat" style="background-color:#34495E">
+							<div class="stat-header">
+								STATISTIC
+							</div>
+							<div class="stat-body">
+								2
+							</div>
+						</div>
+						<div class="pure-u-1-3 stat">
+							<div class="stat-header">
+								STATISTIC
+							</div>
+							<div class="stat-body">
+								3
+							</div>
+						</div>
+					</div>
+					<div class="about-text-content">
+
+						<p>
+							<b class="about-text-title">Lorem ipsum title blah</b>
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis. Nam ullamcorper imperdiet sem, tempor maximus lectus mollis quis. Sed id eleifend nisl. Proin eget euismod augue. Cras rutrum volutpat laoreet. Mauris erat risus, vehicula vitae ornare in, varius a metus.
+						</p>
+						<p>
+							Pellentesque nibh sem, sagittis id bibendum vitae, tempor sed nulla. Nullam dignissim magna at dolor finibus semper. Sed tincidunt eros elit, nec tempor augue auctor ac. Pellentesque vehicula vitae sapien ac blandit. Praesent hendrerit, erat id tincidunt iaculis, est tellus mattis magna, quis porttitor nisl magna at eros. Aenean elementum aliquam aliquet. Vestibulum tincidunt semper sapien quis convallis. Donec pretium orci non iaculis commodo. Vivamus venenatis ex id mi finibus, rutrum accumsan leo pretium.
+						</p>
+						<p>
+							Praesent ipsum massa, cursus id cursus sed, fringilla eget dolor. Phasellus posuere sed nisi vitae hendrerit. Maecenas ullamcorper nisi vitae rhoncus sollicitudin. Nunc id scelerisque nibh. Phasellus nec laoreet nisi. Vestibulum semper dolor velit, quis facilisis enim ornare nec. Vivamus ultrices diam a tortor sollicitudin, at fringilla nisl dignissim. Morbi ac urna dui. Ut nec ante odio.
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="event-calendar">
+			<div class="pure-g">
+				<div class="event-left-sidebar pure-u-2-5"></div>
+				<div class="event-right-sidebar pure-u-3-5">
+					
+					<table> 
+						<tr>
+							<td colspan="7" align=center><b>december 2014</b></td> 
+						</tr>
+						<tr> 
+							<td align=center><b>SUN</b></td>
+							<td align=center><b>MON</b></td>
+							<td align=center><b>TUE</b></td>
+							<td align=center><b>WED</b></td>
+							<td align=center><b>THU</b></td>
+							<td align=center><b>FRI</b></td>
+							<td align=center><b>SAT</b></td>
+						</tr>
+						<tr> 
+							<td align=center></td>
+							<td align=center>1</td>
+							<td align=center>2</td>
+							<td align=center>3</td>
+							<td align=center>4</td>
+							<td align=center>5</td>
+							<td align=center>6</td>
+						</tr>
+						<tr> 
+
+							<td align=center>7</td>
+							<td align=center>8</td>
+							<td align=center>9</td>
+							<td align=center>10</td>
+							<td align=center>11</td>
+							<td align=center>12</td>
+							<td align=center>13</td>
+						</tr>
+						<tr> 
+
+							<td align=center>14</td>
+							<td align=center>15</td>
+							<td align=center>16</td>
+							<td align=center>17</td>
+							<td align=center>18</td>
+							<td align=center>19</td>
+							<td align=center>20</td>
+						</tr>
+						<tr> 
+							
+							<td align=center>21</td>
+							<td align=center>22</td>
+							<td align=center>23</td>
+							<td align=center>24</td>
+							<td align=center>25</td>
+							<td align=center>26</td>
+							<td align=center>27</td>
+						</tr>
+						<tr> 
+							
+							<td align=center>28</td>
+							<td align=center>29</td>
+							<td align=center>30</td>
+							<td align=center>31</td>
+							<td align=center></td>
+							<td align=center></td>
+							<td align=center></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			
+
+		</div>
+
+
+		<div id="map-canvas"></div>
+
+
+
+
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="frameworks/dist/semantic.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+
 </body>
 </html>
