@@ -143,15 +143,40 @@ body{
 	white-space: normal;
 }
 
-table td {
-    padding: 20px
+.calendar td {
+    padding: 20px;
 }
 
+.calendar-wrapper{
+	margin-left: 10%;
+	width: 80%;
+	height: 100vh;
+}
+
+.calendar-wrapper-td{
+	vertical-align: bottom;
+	padding-bottom: 20%;
+}
 
 .calendar{
-	width: 80%;
-	margin-left: 10%;	bottom: 0;
+	width: 100%;
+}
 
+.calendar-row b:hover{
+	cursor: pointer;
+}
+
+.curr-date{
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+	background-color: #26C281;
+	color: white;
+}
+
+.curr-date-text{
+	position: relative;
+	top: 5px;
 }
 
 .seminars{
@@ -184,11 +209,18 @@ table td {
 }
 
 .faq-header{
-	background-color: blue;
+	background-color: #22313F;
+	font-family: "Montserrat";
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding: 40px 0 10px 0;
+	font-size: 48px;
 }
 
 .faq-body{
-	padding: 0 15%;
+	padding: 40px 15%;
+	background-color: #F2F1EF;
 }
 
 .faq-col{
