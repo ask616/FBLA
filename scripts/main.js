@@ -83,14 +83,12 @@ Calendar.prototype.generateHTML = function(){
   var monthLength = cal_days_in_month[this.month];
   
   // compensate for leap year
-  if (this.month == 1) { // February only!
+  if (this.month == 1) {
     if((this.year % 4 == 0 && this.year % 100 != 0) || this.year % 400 == 0){
       monthLength = 29;
     }
   }
 
-
-  // fill in the days
   var day = 1;
 
   var date = new Date();
