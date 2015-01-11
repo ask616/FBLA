@@ -122,6 +122,7 @@ Calendar.prototype.generateHTML = function(){
   }
 
   $(".calendar").append(html);
+  $(".currMonth").append(cal_months_labels[this.month] + " " + date.getUTCFullYear());
 }
 
 $(document).ready(function(){
