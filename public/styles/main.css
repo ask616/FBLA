@@ -59,7 +59,7 @@ body{
 
 .video-container{
 	width: 100%;
-	height: 100vh;
+	/*height: 100vh;*/
 	overflow: hidden;
 	/*opacity: 0.;*/
 }
@@ -70,9 +70,13 @@ body{
 	z-index: 2;
 }
 
+.video-wrapper{
+	overflow: hidden;
+}
+
 .video-overlay{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	position: absolute;
 	background-color: rgba(44, 62, 80,0.5);
 	z-index: 3;
@@ -81,16 +85,22 @@ body{
 .video-content-wrapper{
 	position: absolute;
 	z-index:4;
-	margin-top: 150px;
+	padding: 100px 0;
 	color: white;
+	/*padding-bottom: 0 50px;*/
 	width: 100%;
 	text-align: center;
 }
 
 .video-title{
-	font-family: "Montserrat";
+/*	font-family: "Montserrat";
 	font-weight: 700;
 	font-size: 64px;
+*/
+	    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
 }
 
 .video-subtitle{
@@ -174,6 +184,18 @@ body{
 	/*padding-bottom: 400px;*/
 }
 
+.events h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+.events h1 span {
+    display: block;
+    font-size: 25px;
+    margin-top: 20px
+}
+
 .event{
 	color: white;
 	font-family: "Lato";
@@ -227,11 +249,17 @@ body{
 }
 
 .social-title{
-	font-family: "Montserrat";
+/*	font-family: "Montserrat";
 	font-weight: 700;
 	color: white;
 	text-align: center;
-	font-size: 48px;
+	font-size: 48px;*/
+	text-align: center;
+
+	    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
 }
 
 .social-subtitle{
@@ -307,10 +335,15 @@ body{
 }
 
 .seminar-title{
-	font-family: "Montserrat";
+/*	font-family: "Montserrat";
 	font-weight: 700;
 	text-align: center;
-	font-size: 48px;
+	font-size: 48px;*/
+text-align: center;
+	    /*color: white;*/
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
 }
 
 .seminar-subtitle{
@@ -333,12 +366,18 @@ body{
 
 .faq-header{
 	background-color: #22313F;
-	font-family: "Montserrat";
-	font-weight: 700;
+/*	font-family: "Montserrat";
+	font-weight: 700;*/
 	color: white;
+
+	    /*color: white;*/
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
+
 	text-align: center;
 	padding: 40px 0 20px 0;
-	font-size: 48px;
+	/*font-size: 48px;*/
 }
 
 .faq-body{
@@ -443,29 +482,3 @@ h2::after {
     font-size: 25px;
     margin-top: 20px
 }
-.down-arrow-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: rgba(61, 201, 179, .8);
-    display: inline-block;
-    margin: 10px auto 20px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 40px;
-    text-align: center
-}
-.down-arrow-btn:focus,
-.down-arrow-btn:hover {
-    color: #fff;
-    background: rgba(61, 201, 179, 1)
-}
-
-/*.catalog-button:hover{
-	background: #26C281!important;
-	color: white!important;
-	box-shadow: 0 0 0 2px #26C281 inset!important;
-}*/
