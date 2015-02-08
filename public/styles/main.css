@@ -1,0 +1,450 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster/Lobster_1.3.otf");
+}
+
+body{
+	margin: 0;
+	overflow-x:hidden;
+}
+
+.head-title{
+	font-family: "Lobster";
+	color: white;
+	letter-spacing: 2px;
+	font-size: 64px;
+}
+
+.links-bar{
+	font-family: "Raleway";
+	font-weight: 300;
+	position: relative;
+	color: white;
+	font-size: 24px;
+	top: 15px;
+}
+
+.links-bar > a{
+	color: white;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+.links-bar > a:hover{
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px dotted white;
+}
+
+.intro{
+	background-color: #26C281;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+
+}
+
+.video-container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	/*opacity: 0.;*/
+}
+
+.video{
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.video-overlay{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(44, 62, 80,0.5);
+	z-index: 3;
+}
+
+.video-content-wrapper{
+	position: absolute;
+	z-index:4;
+	margin-top: 150px;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.video-title{
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 64px;
+}
+
+.video-subtitle{
+	font-family: "Lato";
+	margin-top: 30px;
+	letter-spacing: 0.1rem;
+	font-weight: 400;
+	color: white;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.button{
+	letter-spacing: 0.1rem;
+}
+/*
+.about-text{
+	height: 100vh;
+}
+
+.about-sidebar-image{
+	background: url("../images/about-sidebar.jpg");
+	height: 100vh;
+	 background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 0 -100px;
+}
+
+.about-right-sidebar{
+	height:100vh;
+}*/
+
+.event-calendar{
+	height: 100vh;
+}
+
+.event-left-sidebar{
+	background-color: #26C281;
+	height: 100vh;
+}
+
+#map-canvas{
+	width: 100%!important;
+	/*height: 100vh!important;*/
+	position: absolute;
+	z-index: 1;
+	/*margin-left: 50%;*/
+}
+
+.contact{
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+.contact-title{
+	color: #26C281!important;
+	text-align:center;
+	margin-top:3px!important;
+}
+
+.contact-form-wrapper{
+	position: absolute;
+	z-index: 100000;
+	width: 100%;
+	padding: 40px 0;
+}
+
+.contact-window{
+	/*position: relative;*/
+	width: 100%;
+	/*width: 100px;*/
+	/*overflow: hidden;*/
+	/*height: 100px;*/
+	/*background-color: blue;*/
+}
+
+.stat{
+	background-color: #22313F;
+	text-align: center;
+	font-family: "Lato"!important;
+	font-weight: 700;
+	color: #ABB7B7;
+	padding: 40px 0;
+}
+
+.stat-header{
+	font-size: 24px;
+}
+
+.stat-body{
+	font-size: 64px;
+	position: relative;
+	top: -4px;
+}
+
+.about-text-content{
+	padding: 30px 150px;
+	text-align: center;
+	font-family: "Lato";
+}
+
+.about-text-title{
+	font-size: 18px;
+}
+
+.social{
+	overflow: hidden;
+	background-color: #6C7A89;
+	padding: 40px 0 60px 0;
+}
+
+.social-title{
+	font-family: "Montserrat";
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	font-size: 48px;
+}
+
+.social-subtitle{
+	font-family: "Lato";
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+
+.social-row-1{
+	position: relative;
+	left: -60px;
+	display: inline;
+	width: 200%;
+	white-space: nowrap;
+}
+
+.social-row-2{
+	position: relative;
+	top: 20px;
+	left: -250px;
+	display: inline;
+	width: 200%;
+	white-space: nowrap;
+}
+
+.card-col{
+	margin-left: 30px;
+	display: inline-block;
+	white-space: normal;
+}
+
+.calendar td {
+    padding: 20px;
+}
+
+.calendar-wrapper{
+	margin-left: 10%;
+	width: 80%;
+	height: 100vh;
+}
+
+.calendar-wrapper-td{
+	vertical-align: bottom;
+	padding-bottom: 20%;
+}
+
+.calendar{
+	width: 100%;
+}
+
+.calendar-row b:hover{
+	cursor: pointer;
+}
+
+.curr-date{
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+	background-color: #26C281;
+	color: white;
+}
+
+.curr-date-text{
+	position: relative;
+	top: 5px;
+}
+
+.seminars{
+	padding: 40px 0;
+}
+
+.seminar-title{
+	font-family: "Montserrat";
+	font-weight: 700;
+	text-align: center;
+	font-size: 48px;
+}
+
+.seminar-subtitle{
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: center;
+	font-size: 24px;
+	color: #ABB7B7;
+	padding-bottom: 20px;
+}
+
+.seminar-card{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.faq{
+	text-align: center;
+}
+
+.faq-header{
+	background-color: #22313F;
+	font-family: "Montserrat";
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding: 40px 0 20px 0;
+	font-size: 48px;
+}
+
+.faq-body{
+	padding: 40px 15%;
+	background-color: #F2F1EF;
+
+}
+
+.faq-col{
+	padding: 0 20px;
+	font-family: "Lato"!important;
+}
+
+
+.ic {
+    height: 175px;
+    width: 175px;
+    line-height: 175px;
+    max-width: 100%;
+    background: #26C281;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 50px
+}
+
+.shadow {
+ text-shadow: rgb(33, 167, 111) 1px 1px,
+    rgb(33, 167, 111) 2px 2px,
+    rgb(33, 167, 111) 3px 3px,
+    rgb(33, 167, 111) 4px 4px,
+    rgb(33, 167, 111) 5px 5px,
+    rgb(33, 167, 111) 6px 6px,
+    rgb(33, 167, 111) 7px 7px,
+    rgb(33, 167, 111) 8px 8px,
+    rgb(33, 167, 111) 9px 9px,
+    rgb(33, 167, 111) 10px 10px,
+    rgb(33, 169, 112) 11px 11px,
+    rgb(33, 171, 114) 12px 12px,
+    rgb(34, 173, 115) 13px 13px,
+    rgb(34, 176, 117) 14px 14px,
+    rgb(35, 178, 118) 15px 15px,
+    rgb(35, 180, 120) 16px 16px,
+    rgb(35, 182, 121) 17px 17px,
+    rgb(36, 185, 123) 18px 18px,
+    rgb(36, 187, 124) 19px 19px,
+    rgb(37, 189, 126) 20px 20px,
+    rgb(37, 191, 127) 21px 21px,
+    rgb(38, 194, 129) 22px 22px;
+}
+
+.about-qualities{
+	padding: 40px 0;
+}
+
+.quality{
+	font-family: "Lato"!important;
+	text-align: center;
+	padding: 0 30px;
+}
+
+h2::after {
+    content: " ";
+    border: 2px solid #26C281;
+    display: block;
+    width: 35px;
+    margin: 25px auto
+}
+
+.catalog{
+	/*padding-bottom: 50px;*/
+	background: url("../images/catalog-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+	text-align: center;
+}
+
+.catalog-overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.catalog h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+.catalog h1 span {
+    display: block;
+    font-size: 25px;
+    margin-top: 20px
+}
+.down-arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgba(61, 201, 179, .8);
+    display: inline-block;
+    margin: 10px auto 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center
+}
+.down-arrow-btn:focus,
+.down-arrow-btn:hover {
+    color: #fff;
+    background: rgba(61, 201, 179, 1)
+}
+
+/*.catalog-button:hover{
+	background: #26C281!important;
+	color: white!important;
+	box-shadow: 0 0 0 2px #26C281 inset!important;
+}*/

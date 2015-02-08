@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalog</title>
+	<link href="../styles/catalogStyles.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="../frameworks/dist/semantic.min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="Aligner" style="position:absolute">
+		<div class="Aligner-item">
+			<div class="nav-area">
+				 <div class="item" id="nav-title">
+				    Collections
+				  </div>
+				  <a class="item">
+				    Cyclocross
+				  </a>
+				  <br>
+				  <a class="item">
+				    Kids
+				  </a>
+				  <br>
+				  <a class="item">
+				    Mountain
+				  </a>
+				  <br>
+				  <a class="item">
+				    Road
+				  </a>
+				  <br>
+				  <br>
+				  <a class="item">
+				    Home
+				  </a>
+
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<div class="pusher" id="body">
+		<div class="Aligner">
+		  <div class="Aligner-item">
+		  	<img class="bike-image" src="../images/Bike Images/Cyclocross Bikes/TrekBoone.jpg">
+		  	<div class="card-wrapper">
+			  	<div class="seminar-card">
+					<div class="ui card" style="background:none!important">
+						<div class="content">
+							<a class="header">Trek Boone 9 Disc</a>
+							<div class="meta">
+								<span class="date">$6,299.99</span>
+							</div>
+							<div class="description">						
+								Frame | Trek 600 Series OCLV carbon
+								<br>
+								<br>
+								Fork | Trek IsoSpeed Cross
+								<br>
+								<br>
+								Rims | HED Ardennes
+								<br>
+								<br>
+								Tire| Bontrager CX3 Team Issue
+								<br>
+								<br>
+								Crankset | Shimano Ultegra
+								<br>
+								<br>
+								Chainrings | 46/36
+								<br>
+								<br>
+								Bottom Bracket | BB90
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+		
+
+
+	</div>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../frameworks/dist/semantic.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// $('.sidebar')
+		//   .sidebar('toggle')
+		// ;
+
+		$('.sidebar')
+		  .sidebar('setting', 'transition', 'overlay')
+		  .sidebar('setting','dimPage',false)
+		  .sidebar('toggle')
+		;
+	})
+	</script>
+</body>
+</html>
