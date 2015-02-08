@@ -200,6 +200,9 @@ body{
 	color: white;
 	font-family: "Lato";
 	text-align: center;
+/*	-webkit-transition:color .2s;
+    transition: color .2s;*/
+
 }
 
 .month{
