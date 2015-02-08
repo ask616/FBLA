@@ -126,14 +126,6 @@ body{
 	height:100vh;
 }*/
 
-.event-calendar{
-	height: 100vh;
-}
-
-.event-left-sidebar{
-	background-color: #26C281;
-	height: 100vh;
-}
 
 #map-canvas{
 	width: 100%!important;
@@ -168,6 +160,35 @@ body{
 	/*overflow: hidden;*/
 	/*height: 100px;*/
 	/*background-color: blue;*/
+}
+
+.events{
+	/*padding-bottom: 50px;*/
+	background: url("../images/events-bg.jpg") no-repeat center -20px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+	text-align: center;
+	/*padding-bottom: 400px;*/
+}
+
+.event{
+	color: white;
+	font-family: "Lato";
+	text-align: center;
+}
+
+.month{
+	font-size: 24px;
+	font-weight: 300;
+	width: 100%;
+}
+
+.date-num{
+	font-size: 72px;
+	font-weight: 700;
 }
 
 .stat{
