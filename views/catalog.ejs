@@ -16,19 +16,19 @@
 				 <div class="item" id="nav-title">
 				    Collections
 				  </div>
-				  <a class="item">
+				  <a class="item" href="/catalog/cyclocross">
 				    Cyclocross
 				  </a>
 				  <br>
-				  <a class="item">
+				  <a class="item" href="/catalog/kids">
 				    Kids
 				  </a>
 				  <br>
-				  <a class="item">
+				  <a class="item" href="/catalog/mountain">
 				    Mountain
 				  </a>
 				  <br>
-				  <a class="item">
+				  <a class="item" href="/catalog/road">
 				    Road
 				  </a>
 				  <br>
@@ -47,35 +47,45 @@
 	<div class="pusher" id="body">
 		<div class="Aligner">
 		  <div class="Aligner-item">
-		  	<img class="bike-image" src="../images/Bike Images/Cyclocross Bikes/TrekBoone.jpg">
+		  	<img class="bike-image" src="../images/Bike Images/<%= sec %> Bikes/<%= bikeArr[2] %>">
 		  	<div class="card-wrapper">
 			  	<div class="seminar-card">
 					<div class="ui card" style="background:none!important">
 						<div class="content">
-							<a class="header">Trek Boone 9 Disc</a>
+							<a class="header"><%= bikeArr[0] %></a>
 							<div class="meta">
-								<span class="date">$6,299.99</span>
+								<span class="date">$<%= bikeArr[1] %></span>
 							</div>
 							<div class="description">						
-								Frame | Trek 600 Series OCLV carbon
+								Frame | <%= bikeArr[3] %>
 								<br>
 								<br>
-								Fork | Trek IsoSpeed Cross
+								Fork | <%= bikeArr[4] %>
 								<br>
 								<br>
-								Rims | HED Ardennes
+								Rims | <%= bikeArr[5] %>
 								<br>
 								<br>
-								Tire| Bontrager CX3 Team Issue
+								Tires | <%= bikeArr[6] %>
 								<br>
 								<br>
-								Crankset | Shimano Ultegra
+								Crankset | <%= bikeArr[7] %>
 								<br>
 								<br>
-								Chainrings | 46/36
+								Brakes | <%= bikeArr[9] %>
 								<br>
 								<br>
-								Bottom Bracket | BB90
+								Images Courtesy of Chain Reaction Cycles
+								<br>
+								<br>
+								<!-- <a href="#">Next</a> -->
+								<% if(arrIndex > 0) {%>
+									<a href="/catalog/<%= sec.toLowerCase() %>?p=<%= arrIndex %>">Previous</a>
+								<% } if(arrIndex > 0 && arrIndex < len-1) {%>
+									 | 
+								<% } if(arrIndex < len-1) {%>
+								   <a href="/catalog/<%= sec.toLowerCase() %>?p=<%= arrIndex+2 %>">Next</a>
+								<% }%>
 							</div>
 						</div>
 					</div>
@@ -87,6 +97,7 @@
 
 
 	</div>
+
 
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="../frameworks/dist/semantic.min.js"></script>

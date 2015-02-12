@@ -55,6 +55,12 @@ $(document).ready(function(){
         }, 1000)
 	 });
 
+    $(".catalog-link").click(function(){
+    $('html,body').animate({
+             scrollTop: $(".catalog").offset().top 
+        }, 1000)
+   });
+
 	 $("#map-canvas").height($(".contact-form-wrapper").height()+80);
 
    $(".video-wrapper,.video-overlay").height($(".video-content-wrapper").height()+200);
