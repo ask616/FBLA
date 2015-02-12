@@ -38,6 +38,8 @@ module.exports = function(app) {
 /*done*/var electricArr = [["Electra Townie Go!", 2409.99, "ElectraTownie.jpg","Electra 6061-Aluminum", "High-Tensile Steel", "Aluminum","Schwalbe Fat Frank","Forged Alloy 170mm","46/36","Alloy 4-Finger"],
 					/*done*/ ["Trek T80+", 1999.99, "Trek180.jpg","Trek Alpha Silver Aluminum", "SR SunTour CR-8V", "Vuelta Airline II","Schwalbe Road Cruiser Light","Shimano M171","46/36","Tektro TRB-02"]];
 
+/*done*/var foldingArr = [["Dahon Anniversary Replica", 2198.99, "AnniversaryReplica.png","PA Series-Dalloy", "Carbon Fiber", "Alloy","Durano","Omega Mega Exo","46/36","Shimano Tiagra"]];
+
 
 		var sendArr = cyclocrossArr;
 
@@ -55,6 +57,8 @@ module.exports = function(app) {
 			sendArr = electricArr;
 		else if(section == "women")
 			sendArr = womensArr;
+		else if(section == "folding")
+			sendArr = foldingArr;
 		else
 			sendArr = cyclocrossArr
 
