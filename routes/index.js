@@ -32,6 +32,13 @@ module.exports = function(app) {
 		/*done*/	   ["Trek Madone 3.1", 1799.99, "TrekMadone.jpg","Trek 300 Series OCLV carbon", "Trek E2 Carbon Road", "Bontrager","Bontrager R1","SRAM S350","50/34","Shimano 105"],
 		/*done*/	   ["Trek Speed Concept 7.5", 4199.99, "TrekSpeed1.jpg","Trek 500 Series OCLV Carbon", "TBontrager KVF E2", "Bontrager Race","Bontrager R3 Hard Case Lite","Shimano Ultegra","52/36","Bontrager Race Lite"]];
 
+/*done*/var womensArr = [["Trek Syke", 439.99, "TrekSyke.jpg","Trek Alpha Silver Aluminum", "SR Suntour M3030", "Bontrager 550","Bontrager LT-3","Shimano","48/38/28","Tektro"],
+		/*done*/	   ["Trek 7.3 FX WSD", 659.99, "Trek7.3.jpg","Trek FX Alpha Gold Aluminum", "Trek FX Aluminum", "Bontrager Tubeless", "Bontrager AW1 Hardcase Lite","Shimano Acera","48/36/26","Tektro"]];
+
+/*done*/var electricArr = [["Electra Townie Go!", 2409.99, "ElectraTownie.jpg","Electra 6061-Aluminum", "High-Tensile Steel", "Aluminum","Schwalbe Fat Frank","Forged Alloy 170mm","46/36","Alloy 4-Finger"],
+					/*done*/ ["Trek T80+", 1999.99, "Trek180.jpg","Trek Alpha Silver Aluminum", "SR SunTour CR-8V", "Vuelta Airline II","Schwalbe Road Cruiser Light","Shimano M171","46/36","Tektro TRB-02"]];
+
+
 		var sendArr = cyclocrossArr;
 
 		var section = req.params.section;
@@ -44,6 +51,10 @@ module.exports = function(app) {
 			sendArr = mountainArr;
 		else if(section == "road")
 			sendArr = roadArr;
+		else if(section == "electric")
+			sendArr = electricArr;
+		else if(section == "women")
+			sendArr = womensArr;
 		else
 			sendArr = cyclocrossArr
 
