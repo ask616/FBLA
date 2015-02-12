@@ -1,7 +1,25 @@
+var Twitter = require('twitter');
+
 module.exports = function(app) {
 
 	app.get('/', function(req, res) {
-		res.render('index.ejs'); // load the home page
+
+	var client = new Twitter({
+	  consumer_key: 'rTxutdJ9DV2S28Zo9cWaR0vX4',
+	  consumer_secret: '0O5b5RnxkaFbwT1RyvohJeQk7j9spg1C8v2SXDdrTKcaebd6hp',
+	  access_token_key: '384649434-UsNSJmkFGNhJfPibyIA5RXBBzfWWEHVJM2S4cUBH',
+	  access_token_secret: 'M5gHDaPYD44YYczpXB9hD7JoI4KrNfrYVXskSZDYXl6hN'
+	});
+	var tweetArr;
+	client.get('search/tweets', {q: 'CycleFitnessNY_'}, function(error, tweets, response){
+	  if(error) console.log("error");
+	  //tweets.statuses[0].user.profile_image_url
+	  tweetArr = tweets.statuses;
+	  // console.log(tweets.statuses[0]);
+	  res.render('index.ejs',{tweets: tweets.statuses}); // load the home page
+	});
+
+		
 	});
 
 	app.get('/catalog', function(req, res) {

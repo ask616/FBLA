@@ -245,6 +245,15 @@ body{
 	font-size: 18px;
 }
 
+.about-title{
+	text-align: center;
+    /*color: #26C281;*/
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
 .social{
 	overflow: hidden;
 	background-color: #6C7A89;

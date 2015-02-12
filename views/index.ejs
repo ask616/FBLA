@@ -52,7 +52,6 @@
 	      <div class="about-qualities">
 	        <div class="pure-g">
 	          <div class="col-u-1">
-	            
 	            <div class="features-wrapper">
 	              <div class="pure-u-1-3 quality">
 	                <div class="ic">
@@ -94,169 +93,56 @@
 			</div>
 
 			<div class="social-row-1">
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-			</div>
+
+      <% for(var i=0; i<tweets.length/2; i++) {%>
+         <div class="card-col">
+          <div class="ui card">
+            <div class="content">
+              <div class="header">
+                <div class="author">
+                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>
+"> <%= tweets[i].user.name %>
+                </div>
+              </div>
+              <div class="meta"></div>
+              <div class="description">
+                <p><%= tweets[i].text%></p>
+              </div>
+            </div>
+            <div class="extra content">
+              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>" target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
+            </div>
+          </div>
+        </div>
+      <% } %>
+      </div>
+
+
 			<div class="social-row-2">
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-				<div class="card-col">
-					<div class="ui card">
-						<div class="content">
-							<div class="header">Cute Dog</div>
-							<div class="meta">2 days ago</div>
-							<div class="description">
-								<p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are </p>
-								<p>Many people also have their own barometers for what makes a cute dog.</p>
-							</div>
-						</div>
-						<div class="extra content">
-							<i class="check icon"></i>
-							121 Votes
-						</div>
-					</div>
-				</div>
-			</div>
+        
+      <% for(var i=tweets.length/2; i<tweets.length; i++) {%>
+         <div class="card-col">
+          <div class="ui card">
+            <div class="content">
+              <div class="header">
+                <div class="author">
+                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>
+"> <%= tweets[i].user.name %>
+                </div>
+              </div>
+              <div class="meta"></div>
+              <div class="description">
+                <p><%= tweets[i].text%></p>
+              </div>
+            </div>
+            <div class="extra content">
+              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>"target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
+            </div>
+          </div>
+        </div>
+      <% } %>
+
+      </div>
 		</div>
 
 
@@ -401,40 +287,38 @@
 			</div>
 			<div class="pure-g faq-body">
 				<div class="pure-u-1-3 faq-col">
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					<b>What kind of bike is right for me?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<br>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					Stop by our store and ask any of our employees and they’ll run down everything you need to know to find the perfect bike for you!</p>
+					<!-- <br> -->
+					<b>How can I tell what size bike I need?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					The best way would be to visit our store to try one out for yourself. One of our employees can give an accurate size recommendation for you to test out.</p>
+					<b>My bike is functioning weirdly, what should I do?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
+					If your bike is one you bought from Cycle Fitness, the first step is to take your bicycle to our store and we will have one of our repair-certified employees check it out and give you a rundown of what you can do to fix it.</p>
 				</div>
 				<div class="pure-u-1-3 faq-col">
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					<b>Do you offer a warranty on your bikes?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<br>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					All of our products come with a 90-day warranty for cost-free replacement of dysfunctional parts.</p>
+					<!-- <br> -->
+					<b>What is your return policy?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					We offer a 30-day return policy if you are unsatisfied with your purchase. All you need is a receipt to receive a full refund.</p>
+          <!-- <br> -->
+					<b>What equipment do I need to ride a bike?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
+					The most important equipment you need are a helmet and safety lights or reflectors. If you are riding in a city or in the dark, a reflective vest may also be a good investment.</p>
 				</div>
 				<div class="pure-u-1-3 faq-col">
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					<b>Where are your seminars held?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<br>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
+					The seminars are held on-site weekly at our store in 123 Avenue of the America, New York, NY 20013.</p>
+					<!-- <br> -->
+					<b>Where are your cycling trips held?</b>
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</b>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit augue nisl, id commodo mi dictum a. Nulla facilisi. Vestibulum ullamcorper orci est. Maecenas ullamcorper eleifend convallis.</p>
+					The location of our cycling trips varies each month - check out our events page to see where the next one will be held! </p>
 				</div>
 			</div>
 		</div>
@@ -449,7 +333,6 @@
 						<div class="contact-window">
 
 							<div class="ui form segment">
-							<!-- <div class="contact-title"></div> -->
 							<h1 class="ui header contact-title">Contact Us!</h1>
 								<div class="field">
 									<input placeholder="Name" type="text">
