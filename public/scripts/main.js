@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 	 $(".about-link").click(function(){
 	 	$('html,body').animate({
-             scrollTop: $(".about-text").offset().top 
+             scrollTop: $(".video-container").offset().top 
         }, 1000)
 	 });
 
@@ -40,6 +40,12 @@ $(document).ready(function(){
 	 $(".seminars-link").click(function(){
 	 	$('html,body').animate({
              scrollTop: $(".seminars").offset().top 
+        }, 1000)
+	 });
+
+	 $(".events-link").click(function(){
+	 	$('html,body').animate({
+             scrollTop: $(".events").offset().top 
         }, 1000)
 	 });
 	 

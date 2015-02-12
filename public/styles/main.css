@@ -96,7 +96,7 @@ body{
 /*	font-family: "Montserrat";
 	font-weight: 700;
 	font-size: 64px;
-*/
+*/padding: 0 30px;
 	    color: white;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -367,9 +367,16 @@ text-align: center;
 	padding-bottom: 20px;
 }
 
+.seminar-cards{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .seminar-card{
 	display: inline-block;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
+	padding:0 20px;
 }
 
 .faq{
