@@ -5,18 +5,21 @@ module.exports = function(app) {
 	app.get('/', function(req, res) {
 
 	var client = new Twitter({
-	  consumer_key: 'rTxutdJ9DV2S28Zo9cWaR0vX4',
-	  consumer_secret: '0O5b5RnxkaFbwT1RyvohJeQk7j9spg1C8v2SXDdrTKcaebd6hp',
-	  access_token_key: '384649434-UsNSJmkFGNhJfPibyIA5RXBBzfWWEHVJM2S4cUBH',
-	  access_token_secret: 'M5gHDaPYD44YYczpXB9hD7JoI4KrNfrYVXskSZDYXl6hN'
+	  consumer_key: 'KDNFyLhnlnU6uVR5dYDy4xGhO',
+	  consumer_secret: 'KrAMlAMkkyPxu0p68B2h1y7krH5SWZ1z38nkXjvxNhuJhrJZS3',
+	  access_token_key: '3005658960-2TyDZhofuj4oompXKhmDWwvbeeesem3VN1GTqhX',
+	  access_token_secret: 'WdJgmi20b5beEqLS4hUUMj63VazsiD0ocJgzSbUP5DpY1'
 	});
 	var tweetArr;
-	client.get('search/tweets', {q: 'CycleFitnessNY_'}, function(error, tweets, response){
+	client.get('statuses/mentions_timeline', {}, function(error, tweets, response){
 	  if(error) console.log("error");
+	  console.log(tweets);
+	  // console.log("hello");
+	  // console.log("tweets: " + tweets);
 	  //tweets.statuses[0].user.profile_image_url
 	  tweetArr = tweets.statuses;
-	  // console.log(tweets.statuses[0]);
-	  res.render('index.ejs',{tweets: tweets.statuses}); // load the home page
+	  // console.log(JSON.stringify(tweets));
+	  res.render('index.ejs',{tweets: tweets}); // load the home page
 	});
 
 		
