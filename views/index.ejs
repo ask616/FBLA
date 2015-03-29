@@ -92,56 +92,59 @@
 
 			<div class="social-row-1">
 
-      <% for(var i=0; i<tweets.length/2; i++) {%>
-         <div class="card-col">
-          <div class="ui card">
-            <div class="content">
-              <div class="header">
-                <div class="author">
-                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>
-"> <%= tweets[i].user.name %>
-                </div>
-              </div>
-              <div class="meta"></div>
-              <div class="description">
-                <p><%= tweets[i].text%></p>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>" target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
-            </div>
-          </div>
-        </div>
-      <% } %>
+		      <% for(var i=0; i<tweets.length/2; i++) {%>
+		         <div class="card-col">
+		          <div class="ui card">
+		            <div class="content">
+		              <div class="header">
+		              <%console.log("tweets: " + tweets.length)%>
+		                <div class="author">
+		                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>"> <%= tweets[i].user.name %>
+		                </div>
+		              </div>
+		              <div class="meta"></div>
+		              <div class="description">
+		                <p><%= tweets[i].text%></p>
+		              </div>
+		            </div>
+		            <div class="extra content">
+		              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>" target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
+		            </div>
+		          </div>
+		        </div>
+		      <% } %>
+	      </div>
+
+
+	      <div class="social-row-2">
+	        
+	      <% for(var i=tweets.length/2; i<tweets.length; i++) {%>
+	         <div class="card-col">
+	          <div class="ui card">
+	            <div class="content">
+	              <div class="header">
+	                <div class="author">
+	                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>"> <%= tweets[i].user.name %>
+	                </div>
+	              </div>
+	              <div class="meta"></div>
+	              <div class="description">
+	                <p><%= tweets[i].text%></p>
+	              </div>
+	            </div>
+	            <div class="extra content">
+	              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>"target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
+	            </div>
+	          </div>
+	        </div>
+	      <% } %>
+
+	      </div>
       </div>
 
 
-			<div class="social-row-2">
-        
-      <% for(var i=tweets.length/2; i<tweets.length; i++) {%>
-         <div class="card-col">
-          <div class="ui card">
-            <div class="content">
-              <div class="header">
-                <div class="author">
-                  <img class="ui avatar image" src="<%= tweets[i].user.profile_image_url %>
-"> <%= tweets[i].user.name %>
-                </div>
-              </div>
-              <div class="meta"></div>
-              <div class="description">
-                <p><%= tweets[i].text%></p>
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://twitter.com/<%= tweets[i].user.screen_name %>/status/<%= tweets[i].id_str %>"target="_blank"><%= tweets[i].created_at.substring(0,10) %></a>
-            </div>
-          </div>
-        </div>
-      <% } %>
 
-      </div>
-		</div>
+
 
 
           <div class="catalog">
